@@ -1,0 +1,23 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20vh;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .meter {
+    width: 100%;
+  }
+
+  .meterLess::-webkit-meter-optimum-value {
+    background: red;
+  }
+
+  .meter::-webkit-meter-optimum-value, .meter::-webkit-meter-suboptimum-value, .meter::-webkit-meter-even-less-good-value {
+    transition: 1s width;
+  }

@@ -1,0 +1,8 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input name="password" matInput [(ngModel)]="actualPassword" (ngModelChange)="checkPassword()">
+  </mat-form-field>
+  <meter [ngClass]="{'meter': true, 'meterLess': isRed}" min="0" max="100" low="34" high="67" optimum="100" [value]="passwordMeter"></meter>
+</form>
+<router-outlet></router-outlet>
